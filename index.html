@@ -7,17 +7,17 @@
     <title>Formation en ligne : Extensions Volume Style Japonais | Yu-bi Paris</title>
     <meta name="description" content="Maîtrisez l'art des extensions volume style japonais. Une masterclass exclusive par une experte de 20 ans d'expérience en salon parisien.">
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts alignées sur l'identité visuelle du site -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
     <style>
         :root {
             --bg-color: #FFFFFF;
             --container-bg: #FCFBFA;
-            --primary-color: #D4B2A7; /* Ton rose poudré/taupe chaleureux extrait du bouton central du site */
-            --primary-hover: #C5A196;
+            --primary-color: #E3C5BC; /* Teinte rose poudré/taupe clair extraite des boutons de la page */
+            --primary-hover: #D5B4AA;
             --text-dark: #2C2C2C;
             --text-light: #666666;
             --border-color: #EFECE9;
@@ -31,14 +31,15 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-dark);
             line-height: 1.6;
+            font-weight: 300;
         }
 
-        h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
+        h1, h2, h3, .price-amount {
+            font-family: 'Cormorant Garamond', serif;
             font-weight: 600;
         }
 
@@ -71,10 +72,10 @@
         }
 
         header h1 {
-            font-size: 2.3rem;
+            font-size: 2.6rem;
             color: var(--text-dark);
             margin-bottom: 20px;
-            line-height: 1.25;
+            line-height: 1.2;
         }
 
         header p {
@@ -84,7 +85,7 @@
             margin: 0 auto 35px auto;
         }
 
-        /* Main CTA Button aux couleurs du site */
+        /* Main CTA Button aux couleurs de la palette du site */
         .btn-cta {
             display: inline-block;
             background-color: var(--primary-color);
@@ -94,9 +95,10 @@
             font-weight: 500;
             text-decoration: none;
             border-radius: 4px;
-            border: 1px solid #C4A49B;
+            border: 1px solid #D8B9B0;
             transition: background 0.3s ease;
             letter-spacing: 0.5px;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .btn-cta:hover {
@@ -115,7 +117,7 @@
         }
 
         h2 {
-            font-size: 1.8rem;
+            font-size: 2.1rem;
             margin-bottom: 15px;
             text-align: center;
             color: var(--text-dark);
@@ -143,7 +145,7 @@
         }
 
         .module-card h3 {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             color: var(--text-dark);
             margin-bottom: 8px;
         }
@@ -185,16 +187,14 @@
         }
 
         .price-card h3 {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             margin-bottom: 15px;
         }
 
         .price-amount {
-            font-size: 2.8rem;
-            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
             color: var(--text-dark);
             margin-bottom: 20px;
-            font-weight: 600;
         }
 
         /* Footer */
@@ -209,7 +209,7 @@
 
         @media (max-width: 768px) {
             header h1 {
-                font-size: 1.9rem;
+                font-size: 2rem;
             }
             .container {
                 padding: 0 15px;
