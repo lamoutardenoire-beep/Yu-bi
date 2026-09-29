@@ -16,7 +16,8 @@
         :root {
             --bg-color: #FFFFFF;
             --container-bg: #FCFBFA;
-            --primary-color: #7A685D; /* Harmonisé avec la touche de ton chaleureux du site */
+            --primary-color: #D4B2A7; /* Ton rose poudré/taupe chaleureux extrait du bouton central du site */
+            --primary-hover: #C5A196;
             --text-dark: #2C2C2C;
             --text-light: #666666;
             --border-color: #EFECE9;
@@ -83,22 +84,23 @@
             margin: 0 auto 35px auto;
         }
 
-        /* Main CTA Button */
+        /* Main CTA Button aux couleurs du site */
         .btn-cta {
             display: inline-block;
-            background-color: var(--text-dark);
-            color: #FFFFFF;
+            background-color: var(--primary-color);
+            color: var(--text-dark);
             padding: 16px 32px;
             font-size: 1rem;
             font-weight: 500;
             text-decoration: none;
-            border-radius: 3px;
+            border-radius: 4px;
+            border: 1px solid #C4A49B;
             transition: background 0.3s ease;
             letter-spacing: 0.5px;
         }
 
         .btn-cta:hover {
-            background-color: #444444;
+            background-color: var(--primary-hover);
         }
 
         /* Sections */
@@ -154,7 +156,7 @@
         /* Trust Box */
         .trust-box {
             background-color: var(--accent-sand);
-            border-left: 3px solid var(--text-dark);
+            border-left: 3px solid var(--primary-color);
             padding: 25px;
             margin: 30px 0;
             border-radius: 0 4px 4px 0;
