@@ -15,12 +15,12 @@
     <style>
         :root {
             --bg-color: #FFFFFF;
-            --container-bg: #F9F9F7;
-            --primary-color: #5B6B5E;
+            --container-bg: #FCFBFA;
+            --primary-color: #7A685D; /* Harmonisé avec la touche de ton chaleureux du site */
             --text-dark: #2C2C2C;
             --text-light: #666666;
-            --border-color: #EAECE7;
-            --accent-sand: #F2EFEC;
+            --border-color: #EFECE9;
+            --accent-sand: #F7F5F0;
         }
 
         * {
@@ -47,30 +47,18 @@
             padding: 0 20px;
         }
 
-        /* Top Bar / Navigation Style */
+        /* Top Bar / Navigation avec le logo réel */
         .site-nav {
             background-color: var(--bg-color);
-            padding: 25px 20px;
+            padding: 20px 20px;
             text-align: center;
             border-bottom: 1px solid var(--border-color);
         }
 
-        .brand-logo-text {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            letter-spacing: 3px;
-            color: var(--text-dark);
-            text-transform: uppercase;
-            text-decoration: none;
+        .brand-logo {
+            max-width: 120px;
+            height: auto;
             display: inline-block;
-            margin-bottom: 5px;
-        }
-
-        .brand-sub {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--text-light);
         }
 
         /* Hero Section */
@@ -98,7 +86,7 @@
         /* Main CTA Button */
         .btn-cta {
             display: inline-block;
-            background-color: var(--primary-color);
+            background-color: var(--text-dark);
             color: #FFFFFF;
             padding: 16px 32px;
             font-size: 1rem;
@@ -110,7 +98,7 @@
         }
 
         .btn-cta:hover {
-            background-color: #48544a;
+            background-color: #444444;
         }
 
         /* Sections */
@@ -154,7 +142,7 @@
 
         .module-card h3 {
             font-size: 1.2rem;
-            color: var(--primary-color);
+            color: var(--text-dark);
             margin-bottom: 8px;
         }
 
@@ -166,7 +154,7 @@
         /* Trust Box */
         .trust-box {
             background-color: var(--accent-sand);
-            border-left: 3px solid var(--primary-color);
+            border-left: 3px solid var(--text-dark);
             padding: 25px;
             margin: 30px 0;
             border-radius: 0 4px 4px 0;
@@ -202,7 +190,7 @@
         .price-amount {
             font-size: 2.8rem;
             font-family: 'Playfair Display', serif;
-            color: var(--primary-color);
+            color: var(--text-dark);
             margin-bottom: 20px;
             font-weight: 600;
         }
@@ -229,10 +217,11 @@
 </head>
 <body>
 
-    <!-- Navigation / Header Brand -->
+    <!-- Navigation / Header Brand avec le logo Yu-bi.webp -->
     <div class="site-nav">
-        <a href="#" class="brand-logo-text">Yu-Bi</a>
-        <div class="brand-sub">Salon de Beauté • Paris</div>
+        <a href="#">
+            <img src="Yu-bi.webp" alt="Yu-bi Paris" class="brand-logo">
+        </a>
     </div>
 
     <!-- Hero Section -->
