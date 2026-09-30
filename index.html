@@ -16,7 +16,7 @@
         :root {
             --bg-color: #FFFFFF;
             --container-bg: #FCFBFA;
-            --primary-color: #E3C5BC; /* Teinte rose poudré/taupe clair extraite des boutons de la page */
+            --primary-color: #E3C5BC;
             --primary-hover: #D5B4AA;
             --text-dark: #2C2C2C;
             --text-light: #666666;
@@ -49,7 +49,7 @@
             padding: 0 20px;
         }
 
-        /* Top Bar / Navigation avec le logo réel */
+        /* Top Bar / Navigation */
         .site-nav {
             background-color: var(--bg-color);
             padding: 20px 20px;
@@ -85,7 +85,7 @@
             margin: 0 auto 35px auto;
         }
 
-        /* Main CTA Button aux couleurs de la palette du site */
+        /* Main CTA Button */
         .btn-cta {
             display: inline-block;
             background-color: var(--primary-color);
@@ -159,6 +159,27 @@
             font-size: 1rem;
         }
 
+        /* Authority / Expertise Banner */
+        .authority-banner {
+            background-color: var(--accent-sand);
+            border-left: 3px solid var(--primary-color);
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 700px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .authority-banner h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .authority-banner p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
         /* Value Stack / Modules */
         .module-list {
             display: flex;
@@ -181,21 +202,6 @@
 
         .module-card p {
             color: var(--text-light);
-            font-size: 0.95rem;
-        }
-
-        /* Trust Box */
-        .trust-box {
-            background-color: var(--accent-sand);
-            border-left: 3px solid var(--primary-color);
-            padding: 25px;
-            margin: 30px 0;
-            border-radius: 0 4px 4px 0;
-        }
-
-        .trust-box p {
-            font-style: italic;
-            color: var(--text-dark);
             font-size: 0.95rem;
         }
 
@@ -248,7 +254,7 @@
 </head>
 <body>
 
-    <!-- Navigation / Header Brand avec le logo Yu-bi.webp -->
+    <!-- Navigation / Header Brand -->
     <div class="site-nav">
         <a href="#">
             <img src="Yu-bi.webp" alt="Yu-bi Paris" class="brand-logo">
@@ -259,18 +265,24 @@
     <header>
         <div class="container">
             <h1>Maîtrisez l'Art des Extensions Volume Style Japonais</h1>
-            <p>Offrez à vos clientes un regard ultra-dense, aérien et sophistiqué sans alourdir leurs cils naturels. La masterclass exclusive par une experte de 20 ans d'expérience en salon.</p>
+            <p>Offrez à vos clientes un regard ultra-dense, aérien et sophistiqué sans alourdir leurs cils naturels. La masterclass exclusive par une experte de 20 ans d'expérience en salon parisien.</p>
             <a href="https://payhip.com/b/jyQx1" class="btn-cta">Accéder à la Masterclass (300 €)</a>
         </div>
     </header>
 
-    <!-- Video Integration Section -->
+    <!-- Video Integration Section (Preuve par l'exemple) -->
     <div class="video-section">
         <div class="container">
-            <h2>Découvrez le rendu en salon</h2>
+            <h2>Découvrez le rendu réel en salon</h2>
             <p class="section-subtitle">Aperçu vidéo de nos prestations de beauté du regard à Paris.</p>
             <div class="video-wrapper">
                 <iframe src="https://www.youtube.com/embed/JT5re38TSPU" title="Beauté de Cils: Extensions et réhaussement de cils - Yu-bi Paris" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- Bloc d'autorité directe remplaçant les faux avis -->
+            <div class="authority-banner">
+                <h3>Une transmission directe de terrain</h3>
+                <p>Aucune théorie superflue : chaque technique enseignée dans cette masterclass est le fruit direct de 20 années d'exercice quotidien au sein de notre salon parisien, validée par l'exigence d'une clientèle haut de gamme.</p>
             </div>
         </div>
     </div>
@@ -281,10 +293,6 @@
             <h2>Pourquoi le volume russe classique ne suffit plus</h2>
             <p class="section-subtitle">Les exigences des clientes haut de gamme ont évolué vers un raffinement absolu.</p>
             <p style="text-align: center; max-width: 650px; margin: 0 auto; color: var(--text-light);">Réaliser des poses denses tout en préservant la santé du cil naturel demande une rigueur technique absolue. Les éventails qui se referment, l'effet paquet ou l'inconfort sur la paupière sont les principales frictions qui freinent la fidélisation en salon.</p>
-            
-            <div class="trust-box" style="max-width: 650px; margin: 30px auto 0 auto;">
-                <p>« Aucune IA, aucun effet de style théorique. Tous les protocoles présentés sont issus directement de notre pratique quotidienne dans notre salon parisien. »</p>
-            </div>
         </div>
     </section>
 
